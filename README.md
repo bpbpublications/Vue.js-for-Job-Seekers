@@ -1,2 +1,2 @@
-# Vue.js for Job Seekers
- Vue.js for Job Seekers, by BPB Publications
+# Vue.js for Jobseekers
+Vue.js for Jobseekers, by BPB Publications
