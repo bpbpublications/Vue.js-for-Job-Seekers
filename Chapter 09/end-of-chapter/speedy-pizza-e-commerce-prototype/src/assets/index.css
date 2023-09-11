@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .red-button {
+    @apply bg-red-600 text-white font-bold text-xl py-2 px-4 rounded h-12 self-end mb-6;
+  }
+  .red-button-sm {
+    @apply bg-red-600 text-white font-bold text-sm px-2 rounded h-10 self-end;
+  }
+  .btn-placement-b {
+    @apply flex flex-grow justify-center;
+  }
+}
+
+@font-face {
+  font-family: 'speedypizzaregular';
+  src: url('./fonts/speedypizzaregular-webfont.woff2') format('woff2'),
+    url('./fonts/speedypizzaregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  font-family: speedypizzaregular;
+}
