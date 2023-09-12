@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My second Vue app</title>
+  <script src="https://unpkg.com/vue"></script>	#1
+</head>
+<body>
+  <!-- The rest of the site -->
+
+  <div class="w-1/4">
+    <div id="app">
+      <!-- Adding the application markup -->
+
+      <img v-bind:src="imageUrl" class="..." />
+      <div class="...">
+        <div class="...">
+          <div>
+            <i class="fas fa-heart" />
+            {{ likeNumber }}
+          </div>
+          <div>
+            <i class="fas fa-minus-square" />
+            {{ dislikeNumber }}
+          </div>
+        </div>
+        <div>
+          <a v-bind:href="shareUrl">SHARE</a>
+        </div>
+      </div>
+      <div class="...">
+        <label for="email" class="...">
+          <input type="email" class="..." v-model="email" placeholder="..." />
+        </label>
+        <textarea class="..." v-model="comment" class="..." v-on:blur="postComment"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- The rest of the site -->
+
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        imageUrl: "remote-image-url.png",
+        likeNumber: 609,
+        dislikeNumber: 120,
+        shareUrl: "share-url.html",
+        email: "",
+        comment: ""
+      },
+      methods: {}
+    })
+  </script>
+</body>
+</html>
